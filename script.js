@@ -1,4 +1,4 @@
-
+alert(`Answer 1: ${answer1}, Answer 2: ${answer2}, Answer 3: ${answer3}`);
   
   function checkAnswers() {
     // Your logic to check the answers goes here
