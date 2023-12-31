@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap">
+  <style>
+    audio {
+      display: none; /* Hide default audio controls */
+    }
+  
+    #playButton,
+    #pauseButton {
+      background-color: #e6b800;
+      color: #fff;
+      padding: 15px;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 15px; /* Adjust the border-radius to control the curve */
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+  </style>
+  <title>New Year Wishes</title>
+</head>
+<body>
+  <div class="container">
+    <div class="background-images" style="background-image: url('picc1.jpg');"></div>
+    <div class="background-images"></div>
+    <div class="text-container">
+      <h1 id="sweetMessage">Happy New Year, Dear Bestie! 🎉🎉</h1>
+      <p>In this year, finding you as a friend has been my greatest joy. Thanks to you, that you found my contact again. Looking forward to more amazing moments together in the coming year.</p>
+      <p>This year has been a journey—one filled with shared laughter, late-night talks, and a depth of understanding that words often fail to capture.
+      May this coming year be the canvas on which you paint your most vibrant dreams. May success greet you at every turn, and may each challenge only serve to make you stronger.</p>
+      <p> Here's to new beginnings, fresh adventures, and the unwritten chapters that await us.
+
+        Happy New Year, Atharva. May it be as extraordinary as you are.
+        
+        <p> With all my love and support 💗💗</p>
+      <button onclick="goBack()">Go Back</button>
+    </div>
+    <button id="playButton" onclick="playAudio()">Play</button>
+    <button id="pauseButton" onclick="pauseAudio()">Pause</button>
+
+    <audio id="backgroundAudio" autoplay loop>
+    <source src="background_music.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

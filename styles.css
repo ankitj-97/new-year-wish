@@ -1,0 +1,82 @@
+body {
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  position: relative;
+}
+
+.background-images {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  transition: background-image 1s linear;
+}
+
+.text-container {
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  color: #e6b800;
+  font-size: 2em;
+  transition: color 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.6;
+  transition: color 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+button {
+  background-color: #e6b800;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55), color 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+#sweetMessage {
+  color: #e6b800;
+}
+
+/* Style the audio player controls */
+audio {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Style the play/pause button */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button {
+  background-color: #e6b800;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Remove the default play button */
+audio::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
