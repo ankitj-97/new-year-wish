@@ -7,9 +7,9 @@ alert(`Answer 1: ${answer1}, Answer 2: ${answer2}, Answer 3: ${answer3}`);
     const answer3 = document.getElementById("answer3").value.toLowerCase();
   
     // You can customize the correct answers
-    const correctAnswer1 = "a";
-    const correctAnswer2 = "a";
-    const correctAnswer3 = "a";
+    const correctAnswer1 = "Yeh Dosti Hum Nahin Todenge";
+    const correctAnswer2 = "Jag Soona Soona Lage";
+    const correctAnswer3 = "Dil Toh Bachcha Hai";
   
     if (answer1 === correctAnswer1 && answer2 === correctAnswer2 && answer3 === correctAnswer3) {
       window.location.href = "message.html";
